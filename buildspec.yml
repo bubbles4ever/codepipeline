@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id kms-key-id --s3-bucket bucket-name 
+      - aws cloudformation package --template-file samTemplate.yaml --kms-key-id 86d356be-4b55-49f4-9340-0fe0cbade86d --s3-bucket aijun-code-pipeline 
                                    --output-template-file outputSamTemplate.yaml
 artifacts:
   type: zip
